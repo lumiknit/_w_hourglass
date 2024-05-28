@@ -1,0 +1,66 @@
+.cont {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inset: 0;
+}
+
+div.hourglass {
+  position: relative;
+  margin: auto;
+  width: 50dvh;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+div.hourglass-inner {
+  position: absolute;
+  width: 60dvh;
+  height: 60dvh;
+
+  transform: translate(-5dvh, 20dvh) rotate(45deg);
+}
+
+.hourglass-room {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  line-height: 0;
+}
+
+.hourglass-top {
+  top: 0;
+  left: 0;
+}
+
+.hourglass-bottom {
+  left: 50%;
+  top: 50%;
+}
+
+.hourglass-cell {
+  display: inline-block;
+  width: 16%;
+  height: 16%;
+}
+
+.hourglass-dot {
+  display: inline-block;
+  width: 90%;
+  height: 90%;
+  border-radius: 999rem;
+  background-color: red;
+}
+
+.overlay {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  background-color: #0008;
+}
